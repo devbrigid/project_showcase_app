@@ -49,13 +49,16 @@
     filter: invert(1) brightness(2);
   }
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
 }
 
 #root {
-  width: 1126px;
+  width: 100%;
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
@@ -95,17 +98,51 @@ p {
   margin: 0;
 }
 
-code,
-.counter {
-  font-family: var(--mono);
-  display: inline-flex;
-  border-radius: 4px;
-  color: var(--text-h);
+.full-list {
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 5rem 15rem;
+  background-color: #e46276;
+}
+.search-box {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 2rem;
+  width: 100%;
 }
 
-code {
-  font-size: 15px;
-  line-height: 135%;
-  padding: 4px 8px;
-  background: var(--code-bg);
+.search-box input {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  font-size: 14px;
+}
+.search-box button {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #b04555;
+  color: white;
+  cursor: pointer;
+}
+
+.search-box button:hover {
+  background-color: #780404;
+}
+
+.footer {
+  background-color: #b04555;
+  border-top: 2px solid antiquewhite;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 13px;
+  color: antiquewhite;
+  margin: 0;
 }

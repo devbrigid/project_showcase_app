@@ -1,0 +1,77 @@
+.project-form {
+  display: flex;
+  flex-direction: column;   /* stacks fields vertically */
+  gap: 1rem;                /* space between each field */
+  max-width: 1000px; 
+  width: 100%;        /* stops form from stretching too wide */
+  margin: 2rem auto;        /* centers the form on the page */
+  padding: 2rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  background-color: #ea8594;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.project-form h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 0.5rem;
+}
+
+.project-form label {
+  font-size: 20px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 0.2rem;
+}
+
+.project-form input,
+.project-form textarea {
+  width: 100%;
+  height: 50px;
+  padding: 0.6rem 0.8rem;
+  font-size: 14px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  outline: none;
+  color: #111;
+  transition: border 0.2s ease;
+  box-sizing: border-box;  /* stops inputs from overflowing */
+}
+.project-form textarea{
+  height: 80px;
+}
+
+.project-form input:focus,
+.project-form textarea:focus {
+  border-color: rgb(157, 40, 40); 
+}
+
+.project-form textarea {
+  height: 100px;
+  resize: none;   /* stops textarea from being resized by user */
+}
+
+.project-form button {
+  display: inline-block;
+  width: 250px;
+  padding: 1rem 1.5rem;
+
+  background-color: rgb(157, 40, 40);
+  color: white;
+
+  border: none;
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  align-self: flex-start;
+}
+
+.project-form button:hover {
+  background-color: rgb(130, 30, 30);  /* ← slightly darker on hover */
+}

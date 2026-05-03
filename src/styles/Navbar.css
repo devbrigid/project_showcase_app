@@ -1,0 +1,46 @@
+.navbar {
+  background-color: #eb6579;
+  border-bottom: 2px solid antiquewhite;
+  position: sticky;
+  
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+nav h2{
+  color: #a73a4a;
+  font-weight: 800;
+}
+
+.nav-links{
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;       /* removes underline */
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.15); /* subtle hover effect */
+}
+
+nav a.active {
+  background-color: rgba(255, 255, 255, 0.25); /* highlights current page */
+  font-weight: 700;
+}
